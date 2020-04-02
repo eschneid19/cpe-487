@@ -1,4 +1,5 @@
 #FPGA I/O Pin Locations
+--Changed the pins to different locations
 
 set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports {dig[0]}]
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports {dig[1]}]
