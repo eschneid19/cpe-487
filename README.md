@@ -1,3 +1,4 @@
 # cpe-487
+Digital System Design
 
-Labs
+A collection of the Labs and future project I have done for class.
