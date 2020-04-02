@@ -5,8 +5,8 @@ entity leddec2 is
 port(
     dig : in std_logic_vector(1 downto 0);
     data : in std_logic_vector(3 downto 0);
-    anode : out std_logic_vector(0 to 3);
-    seg : out std_logic_vector(0 to 6));
+    anode : out std_logic_vector(0 to 3); -- changed downto -> to
+    seg : out std_logic_vector(0 to 6)); -- changed downto -> to
 end leddec2;
 
 architecture Behavioral of leddec2 is
@@ -30,7 +30,7 @@ begin
 	       "0111000" WHEN data = "1111" ELSE --F
 	       "1111111";
 	   
-anode <= "0111" WHEN dig = "00" ELSE --0
+    anode <= "0111" WHEN dig = "00" ELSE --0  changed which display is active
 	     "1011" WHEN dig = "01" ELSE --1
 	     "1101" WHEN dig = "10" ELSE --2
 	     "1110" WHEN dig = "11" ELSE --3
